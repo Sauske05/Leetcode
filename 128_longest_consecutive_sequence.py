@@ -9,7 +9,7 @@ The algorithm uses a hash set (`hash_set`) for O(1) lookups, and iterates over e
 - Otherwise, we try to expand the sequence in both the decreasing (`num - 1`) and increasing (`num + 1`) directions.
 - We keep the largest sequence found in `longest_seq` and return its length.
 
-This was the **first approach that came to mind**, and while it works correctly, there is a slightly more **optimal solution** 
+This was the first approach that came to mind, and while it works correctly, there is a slightly more **optimal solution** 
 that avoids constructing intermediate sets and instead looks only for the beginning of sequences, resulting in better efficiency.
 
 --> Time Complexity
