@@ -53,3 +53,4 @@ class Solution:
             node.left = node.right
             node.right = temp
         return root
+
