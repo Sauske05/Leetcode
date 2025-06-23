@@ -47,8 +47,10 @@ class Solution:
         stack = [root]
         while stack:
             node = stack.pop()
-            if node.left: stack.append(node.left)
-            if node.right: stack.append(node.right)
+            if node.left: 
+                stack.append(node.left)
+            if node.right: 
+                stack.append(node.right)
             temp = node.left
             node.left = node.right
             node.right = temp
